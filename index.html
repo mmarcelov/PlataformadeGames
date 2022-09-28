@@ -1,335 +1,347 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<lang="pt-br">
 
-<Head>
-    <!-- meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!-- CSS -->
-    <link href="/assets/css/estilos.css" rel="stylesheet">
-</Head>
+    <Head>
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <!-- CSS -->
+        <link href="/assets/css/estilos.css" rel="stylesheet">
+    </Head>
 
-<body>
-    <!-- Nav bar -->
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><i class="bi bi-controller"></i>Player 2</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Destaques</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Lançamentos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active" href="#">Plataformas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active">Publishers</a>
-                        </li>
-                    </ul>
-                    <form class="input-group-append d-flex" role="search">
-                        <div class="input-group">
-                            <span class="input-group-text border border-opacity-75" id="basic-addon1"><i
-                                    class="bi bi-search"></i></span>
-                            <input type="text" class="form-control border border-start-0 border-end-0 border-opacity-75"
-                                placeholder="Pesquisar games" aria-label="Username" aria-describedby="basic-addon1">
-                            <span class="input-group-text border border-opacity-75" id="basic-addon1"><i
-                                    class="bi bi-x-circle"></i></span>
-                        </div>
-                    </form>
+    <body>
+        <!-- Nav bar -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><i class="bi bi-controller"></i>Player 2</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#destaque">Destaques</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#lancamento">Lançamentos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#plataforma">Plataformas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#publisher">Publishers</a>
+                            </li>
+                        </ul>
+                        <form class="input-group-append d-flex" role="search">
+                            <div class="input-group">
+                                <span class="input-group-text border border-opacity-75" id="basic-addon1"><i
+                                        class="bi bi-search"></i></span>
+                                <input type="text"
+                                    class="form-control border border-start-0 border-end-0 border-opacity-75"
+                                    placeholder="Pesquisar games" aria-label="Username" aria-describedby="basic-addon1">
+                                <span class="input-group-text border border-opacity-75" id="basic-addon1"><i
+                                        class="bi bi-x-circle"></i></span>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main class="pb-3 bg-dark bg-opacity-10">
-        <section class="container">
-            <div class="d-flex justify-content-center">
-                <div>
-                    <h1 class="justify-content-lg-between">Destaques</h1>
+            </nav>
+        </header>
+        <!-- Destaques -->
+        <main class="pb-3 bg-dark bg-opacity-10">
+            <section class="container-fluid">
+                <div class="d-flex justify-content-center">
+                    <div>
+                        <h1 class="justify-content-lg-between" id="destaque">Destaques</h1>
+                    </div>
                 </div>
-            </div>
-            <!-- <div class="row">
+                <!-- <div class="row">
                 
             </div> -->
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner pb-5">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <div class="col-12 col-lg-6 col-sm-6 float-start">
-                            <div class="ratio ratio-16x9">
-                                <iframe src="https://www.youtube.com/embed/gkkbWptA_bU" title="YouTube video player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner pb-5">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="col-12 col-lg-6 col-md-6 col-sm-6 float-start">
+                                <div class="ratio ratio-16x9" id="video">
+                                    <iframe src="https://www.youtube.com/embed/gkkbWptA_bU" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-md-8 col-sm-6 float-end ps-4 formatacao" id="nopadding">
+                                <h4>DeathLoop</h4>
+                                <p> <b>Sobre:</b> Se no começo você não conseguir Morra, Morra de Novo<br />
+                                    Da equipe da Arkane Lyon vem uma visão inovadora da ação em primeira pessoa.
+                                    "DEATHLOOP"
+                                    transporta os jogadores para a ilha sem lei de Blackreef em uma eterna luta entre
+                                    dois
+                                    assassinos extraordinários. Explore ambientes impressionantes e níveis
+                                    meticulosamente
+                                    projetados em uma experiência de jogo imersiva que permite que você aborde todas as
+                                    situações da maneira que quiser. Cace alvos por toda a ilha em um esforço para
+                                    acabar
+                                    com o
+                                    ciclo de uma vez por todas, e lembre-se, se no início você não conseguir, morra,
+                                    morra
+                                    novamente.</p>
+                                <p> <b>Publishers:</b> Bethesda Softworks <b class="ps-3">Lançamento:</b> 14/9/2021</p>
+                                <p> <b>Plataformas:</b> Xbox Series X e Series S, PlayStation 5, Xbox Cloud Gaming,
+                                    Microsoft
+                                    Windows</p>
+                                <p> <b>Gêneros:</b> Tiro em primeira pessoa, Jogo eletrônico de ação e aventura, Jogo
+                                    eletrônico de
+                                    luta</p>
+                                <p> <b>Avaliação:</b> <b class="text-danger">88</b></p>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-6 col-sm-6 float-end ps-4 formatacao" id="nopadding">
-                            <h4>DeathLoop</h4>
-                            <p> <b>Sobre:</b> Se no começo você não conseguir Morra, Morra de Novo<br />
-                                Da equipe da Arkane Lyon vem uma visão inovadora da ação em primeira pessoa. "DEATHLOOP"
-                                transporta os jogadores para a ilha sem lei de Blackreef em uma eterna luta entre dois
-                                assassinos extraordinários. Explore ambientes impressionantes e níveis meticulosamente
-                                projetados em uma experiência de jogo imersiva que permite que você aborde todas as
-                                situações da maneira que quiser. Cace alvos por toda a ilha em um esforço para acabar
-                                com o
-                                ciclo de uma vez por todas, e lembre-se, se no início você não conseguir, morra, morra
-                                novamente.</p>
-                            <p> <b>Publishers:</b> Bethesda Softworks <b class="ps-3">Lançamento:</b> 14/9/2021</p>
-                            <p> <b>Plataformas:</b> Xbox Series X e Series S, PlayStation 5, Xbox Cloud Gaming,
-                                Microsoft
-                                Windows</p>
-                            <p> <b>Gêneros:</b> Tiro em primeira pessoa, Jogo eletrônico de ação e aventura, Jogo
-                                eletrônico de
-                                luta</p>
-                            <p> <b>Avaliação:</b> <b class="text-danger">88</b></p>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div class="col-12 col-lg-6 col-md-8 col-sm-6 float-start">
+                                <div class="ratio ratio-16x9" id="video">
+                                    <iframe src="https://www.youtube.com/embed/x6oF3Jxu7X0" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-md-6 col-sm-6 float-end ps-4 formatacao" id="nopadding">
+                                <h4>God of War Ragnarok</h4>
+                                <p> <b>Sobre:</b> God of War Ragnarök é um futuro jogo eletrônico de ação-aventura
+                                    desenvolvido pela Santa Monica Studio e publicado pela Sony Interactive
+                                    Entertainment.
+                                    Após o evento do jogo de 2018, com Atreus um pouco mais velho enquanto tenta
+                                    entender
+                                    suas origens e a importância de seu nome de batismo — Loki. A busca por respostas
+                                    vai
+                                    desencadear no auge do Ragnarok, o fim dos tempos Nórdicos.</p>
+                                <p> <b>Publishers:</b> Santa Monica Studio <b class="ps-3">Lançamento:</b> 9/11/2022</p>
+                                <p> <b>Plataformas:</b> Playstation 4, PlayStation 5</p>
+                                <p> <b>Gêneros:</b> Jogo eletrônico de ação e aventura, Jogo eletrônico de luta, Hack
+                                    and
+                                    slash</p>
+                                <p> <b>Avaliação:</b> <b class="text-danger">A ser avaliado</b></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div class="col-12 col-lg-6 col-md-8 col-sm-6 float-start">
+                                <div class="ratio ratio-16x9" id="video">
+                                    <iframe src="https://www.youtube.com/embed/ohClxMmNLQQ" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-sm-6 float-end ps-4 formatacao" id="nopadding">
+                                <h4>It Takes Two</h4>
+                                <p> <b>Sobre:</b> It Takes Two uma aventura cooperativa inovadora onde
+                                    jogabilidade variada e narrativa emocional se entrelaçam em uma jornada fantástica.
+                                    Algo fora do comum. Traga seu parceiro cooperativo favorito e, juntos, coloquem-se
+                                    no
+                                    lugar de May e Cody.
+                                    Como o casal está passando por um divórcio, por meios desconhecidos suas mentes são
+                                    transportadas para duas bonecas que sua filha, Rose, fez para representá-los. Agora
+                                    eles
+                                    devem relutantemente encontrar uma maneira de voltar para seus corpos, uma busca que
+                                    os
+                                    leva através da jornada mais selvagem, inesperada e fantástica imaginável.</p>
+                                <p> <b>Publishers:</b> Hazelight Studios <b class="ps-3">Lançamento:</b> 25/03/2021</p>
+                                <p> <b>Plataformas:</b> PC, PlayStation 4,PlayStation 5, Switch, Xbox One, Xbox Series X
+                                </p>
+                                <p> <b>Gêneros:</b> Jogo eletrônico de plataforma, Jogo eletrônico de quebra-cabeça,
+                                    Jogo
+                                    eletrônico de ação e aventura</p>
+                                <p> <b>Avaliação:</b> <b class="text-danger">89</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Lançamentos -->
+        <section>
+            <div class="container" style="margin-top: 25px;">
+                <div class="row">
+                    <div>
+                        <h1 class="justify-content-lg-start" id="lancamento">Lançamentos</h1>
+                        <div class="btn-group float-end" role="group">
+                            <button type="button" class="btn bi-light btn-outline-dark dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Ordem:
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Alfabética</a></li>
+                                <li><a class="dropdown-item" href="#">Nota</a></li>
+                                <li><a class="dropdown-item" href="#">Popularidade</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group float-end me-4" role="group">
+                            <button type="button" class="btn bi-light btn-outline-dark dropdown-toggle"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Gênero:
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Todos</a></li>
+                                <li><a class="dropdown-item" href="#">Ação</a></li>
+                                <li><a class="dropdown-item" href="#">Aventura</a></li>
+                                <li><a class="dropdown-item" href="#">Indie</a></li>
+                                <li><a class="dropdown-item" href="#">Tiro</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row lancamentos">
+                    <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                        <div class="card border border-0">
+                            <h5 class="card-title">FIFA 23<span class="float-end">80</span></h5>
+                            <iframe src="https://www.youtube.com/embed/o3V-GvvzjE4" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <p class="card-text text-end">Mais detalhes...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                        <div class="card border border-0">
+                            <h5 class="card-title">Soulstice<span class="float-end">74</span></h5>
+                            <iframe src="https://www.youtube.com/embed/ovXIExDPhBk" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <p class="card-text text-end">Mais detalhes...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                        <div class="card border border-0">
+                            <h5 class="card-title">Tunic<span class="float-end">90</span></h5>
+                            <iframe src="https://www.youtube.com/embed/FLfh8HQhJnE" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <p class="card-text text-end">Mais detalhes...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                        <div class="card border border-0">
+                            <h5 class="card-title">Moonscars<span class="float-end">75</span></h5>
+                            <iframe src="https://www.youtube.com/embed/YFEU1zVxUVo" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <p class="card-text text-end">Mais detalhes...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                        <div class="card border border-0">
+                            <h5 class="card-title">Grounded<span class="float-end">92</span></h5>
+                            <iframe src="https://www.youtube.com/embed/ciVgq5xO5G0" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <p class="card-text text-end">Mais detalhes...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-3 col-md-4 col-lg-3">
+                        <div class="card border border-0">
+                            <h5 class="card-title">Metal:Hellsiner<span class="float-end">79</span></h5>
+                            <iframe src="https://www.youtube.com/embed/YaTIK69YulQ" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <div class="card-body">
+                                <p class="card-text text-end">Mais detalhes...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex float-end">
+                            <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais lançamentos</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    <div class="container" style="margin-top: 25px;">
-        <div class="row">
-            <div>
-                <h1 class="justify-content-lg-start">Lançamento</h1>
-                <div class="btn-group float-end" role="group">
-                    <button type="button" class="btn bi-light btn-outline-dark dropdown-toggle"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Ordem:
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Alfabética</a></li>
-                        <li><a class="dropdown-item" href="#">Nota</a></li>
-                        <li><a class="dropdown-item" href="#">Popularidade</a></li>
-                    </ul>
-                </div>
-                <div class="btn-group float-end me-4" role="group">
-                    <button type="button" class="btn bi-light btn-outline-dark dropdown-toggle"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Gênero:
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Todos</a></li>
-                        <li><a class="dropdown-item" href="#">Ação</a></li>
-                        <li><a class="dropdown-item" href="#">Aventura</a></li>
-                        <li><a class="dropdown-item" href="#">Indie</a></li>
-                        <li><a class="dropdown-item" href="#">Tiro</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row lancamentos">
-            <div class="col-12 col-sm-3 col-md-4 col-lg-3">
-                <div class="card border border-0">
-                    <h5 class="card-title">FIFA 23<span class="float-end">80</span></h5>
-                    <img style="width: 100%;"
-                        src="https://s2.glbimg.com/9K5eFTG7MONGExnCW-5G7yDFpq4=/0x250:1892x1264/984x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2018/04/10/free_fire.png"
-                        alt="teste">
-                    <div class="card-body">
-                        <p class="card-text text-end">Mais detalhes...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-3 col-md-4 col-lg-3">
-                <div class="card border border-0">
-                    <h5 class="card-title">Soulstice<span class="float-end">74</span></h5>
-                    <img style="width: 100%;"
-                        src="https://s2.glbimg.com/9K5eFTG7MONGExnCW-5G7yDFpq4=/0x250:1892x1264/984x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2018/04/10/free_fire.png"
-                        alt="teste">
-                    <div class="card-body">
-                        <p class="card-text text-end">Mais detalhes...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-3 col-md-4 col-lg-3">
-                <div class="card border border-0">
-                    <h5 class="card-title">Tunic<span class="float-end">90</span></h5>
-                    <img style="width: 100%;"
-                        src="https://s2.glbimg.com/9K5eFTG7MONGExnCW-5G7yDFpq4=/0x250:1892x1264/984x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2018/04/10/free_fire.png"
-                        alt="teste">
-                    <div class="card-body">
-                        <p class="card-text text-end">Mais detalhes...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-3 col-md-4 col-lg-3">
-                <div class="card border border-0">
-                    <h5 class="card-title">Moonscars<span class="float-end">75</span></h5>
-                    <img style="width: 100%;"
-                        src="https://s2.glbimg.com/9K5eFTG7MONGExnCW-5G7yDFpq4=/0x250:1892x1264/984x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2018/04/10/free_fire.png"
-                        alt="teste">
-                    <div class="card-body">
-                        <p class="card-text text-end">Mais detalhes...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-3 col-md-4 col-lg-3">
-                <div class="card border border-0">
-                    <h5 class="card-title">Grounded<span class="float-end">92</span></h5>
-                    <img style="width: 100%;"
-                        src="https://s2.glbimg.com/9K5eFTG7MONGExnCW-5G7yDFpq4=/0x250:1892x1264/984x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2018/04/10/free_fire.png"
-                        alt="teste">
-                    <div class="card-body">
-                        <p class="card-text text-end">Mais detalhes...</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-3 col-md-4 col-lg-3">
-                <div class="card border border-0">
-                    <h5 class="card-title">Card title<span class="float-end">92</span></h5>
-                    <img style="width: 100%;"
-                        src="https://s2.glbimg.com/9K5eFTG7MONGExnCW-5G7yDFpq4=/0x250:1892x1264/984x0/smart/filters:strip_icc()/s.glbimg.com/po/tt2/f/original/2018/04/10/free_fire.png"
-                        alt="teste">
-                    <div class="card-body">
-                        <p class="card-text text-end">Mais detalhes...</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="d-flex float-end">
-                    <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais lançamentos</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-    <section class="container" style="margin-top: 25px;">
-        <div class="row">
-            <div>
-                <h1 class="justify-content-lg-start">Plataformas</h1>
-            </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                <div class="col-12">
-                    <div class="card border border-0 p-1" style="width: 18rem;">
-                        <h4 class="card-title">PlayStation</h4>
-                        <img src="img/1280px-PlayStation_logo.svg.png" style="vertical-align:middle"
-                            alt="PlayStation Logo">
-                        <div class="card-body p-0">
-                            <h6 class="card-text mb-0">Principais jogos</h6>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <p class="card-botton">Mais detalhes...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card border border-0 p-1" style="width: 18rem;">
-                        <h4 class="card-title">PlayStation</h4>
-                        <img src="img/1024px-Xbox_one_logo.svg.png" style="vertical-align:middle"
-                            alt="PlayStation Logo">
-                        <div class="card-body p-0">
-                            <h6 class="card-text mb-0">Principais jogos</h6>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <p class="card-botton">Mais detalhes...</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="card border border-0 p-1" style="width: 18rem;">
-                        <h4 class="card-title">PlayStation</h4>
-                        <img src="img/nintendo-switch-logo-38D4F5C7E7-seeklogo.com.png" style="vertical-align:middle"
-                            alt="PlayStation Logo">
-                        <div class="card-body p-0">
-                            <h6 class="card-text mb-0">Principais jogos</h6>
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                            <p class="card-botton">Mais detalhes...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex float-end my-2">
-                        <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais plataformas</button>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <main class="pb-3 bg-dark bg-opacity-10">
+        <!-- Plataformas -->
         <section class="container" style="margin-top: 25px;">
             <div class="row">
                 <div>
-                    <h1 class="justify-content-lg-start">Publishers</h1>
+                    <h1 class="justify-content-lg-start" id="plataforma">Plataformas</h1>
                 </div>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                    <div class="col-12">
-                        <div class="card border border-0 p-1" style="width: 18rem;">
-                            <h4 class="card-title">PlayStation</h4>
-                            <img src="img//Rockstar_Games_Logo.svg.png" style="vertical-align:middle"
-                                alt="PlayStation Logo">
+                    <div class="col-12 m-0">
+                        <div class="card border border-0 p-1 m-1" style="width: 18rem;">
+                            <h4 class="card-title">XBOX</h4>
+                            <div class="p-2 m-2">
+                                <img src="img/1024px-Xbox_one_logo.svg.png" style="width: 50%;" alt="XBOX">
+                            </div>
                             <div class="card-body p-0">
-                                <h6 class="card-text mb-0">Principais jogos</h6>
+                                <h6 class="card-text mb-1">Principais jogos:</h6>
                                 <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>Halo Infinite</li>
+                                    <li>Forza Horizon 5</li>
+                                    <li>Starfield</li>
                                 </ul>
                                 <p class="card-botton">Mais detalhes...</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="card border border-0 p-1" style="width: 18rem;">
+                    <div class="col-12 m-0">
+                        <div class="card border border-0 p-1 m-1" style="width: 18rem;">
                             <h4 class="card-title">PlayStation</h4>
-                            <div>
-                                <img src="img/1200px-Bethesda_Game_Studios_logo.svg.png" width="100%" height="auto" style="vertical-align:middle"
-                                    alt="Bethesda">
+                            <div class="p-2 m-2">
+                                <img src="img/playstation-logo_brandlogos.net_vflvi.png" style="width: 50%;"
+                                    alt="PlayStation">
+                            </div>
                             <div class="card-body p-0">
-                                <h6 class="card-text mb-0">Principais jogos</h6>
+                                <h6 class="card-text mb-1">Principais jogos</h6>
                                 <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>Demon's Souls</li>
+                                    <li>Death Stranding</li>
+                                    <li>Ratchet and Clank</li>
                                 </ul>
                                 <p class="card-botton">Mais detalhes...</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="card border border-0 p-1" style="width: 18rem;">
-                            <h4 class="card-title">PlayStation</h4>
-                            <div height="200px;">
-                                <img class="img-fluid" src="img/1000px-EA_Sports_monochrome_logo.svg.png"
-                                    alt="PlayStation Logo">
+                    <div class="col-12 m-0">
+                        <div class="card border border-0 p-1 m-1" style="width: 18rem;">
+                            <h4 class="card-title">Nintendo</h4>
+                            <div class="p-2 m-2">
+                                <img src="img/nintendo-switch-logo-38D4F5C7E7-seeklogo.com.png" style="width: 50%;"
+                                    alt="Nintendo">
                             </div>
                             <div class="card-body p-0">
-                                <h6 class="card-text mb-0">Principais jogos</h6>
+                                <h6 class="card-text mb-1">Principais jogos</h6>
                                 <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>The Legend of Zelda</li>
+                                    <li>Super Smash Bros</li>
+                                    <li>Animal Crossing</li>
                                 </ul>
                                 <p class="card-botton">Mais detalhes...</p>
                             </div>
@@ -343,82 +355,161 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-        crossorigin="anonymous"></script>
-</body>
-<section class="bg-light text-center text-lg-start pb-3">
-    <!-- Grid container -->
-    <div class="container pt-4">
-        <!--Grid row-->
-        <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <h3 class="text-uppercase">Sobre</h3>
+        <!-- Publishers -->
+        <main class="pb-3 bg-dark bg-opacity-10">
+            <section class="container" style="margin-top: 25px;">
+                <div class="row">
+                    <div>
+                        <h1 class="justify-content-lg-start" id="publisher">Publishers</h1>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                        <div class="col-12">
+                            <div class="card border border-0 p-1" style="width: 18rem;">
+                                <h4 class="card-title">Rockstar Games</h4>
+                                <div class="p-2 m-2">
+                                    <img src="img/rockstar-games-1024.png" style="width: 50%;" alt="Rockstar">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h6 class="card-text mb-1">Principais jogos</h6>
+                                    <ul>
+                                        <li>GTA V</li>
+                                        <li>Red Dead Redemption</li>
+                                        <li>Bully</li>
+                                    </ul>
+                                    <p class="card-botton">Mais detalhes...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card border border-0 p-1" style="width: 18rem;">
+                                <h4 class="card-title">Riot Games</h4>
+                                <div class="p-2 m-2">
+                                    <img src="img/riot-games-1024.png" style="width: 50%;" alt="Riot">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h6 class="card-text mb-1">Principais jogos</h6>
+                                    <ul>
+                                        <li>League of Legends</li>
+                                        <li>Valorant</li>
+                                        <li>Legends of Runeterra</li>
+                                    </ul>
+                                    <p class="card-botton">Mais detalhes...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="card border border-0 p-01" style="width: 18rem;">
+                                <h4 class="card-title">EA Sports</h4>
+                                <div class="p-2 m-2">
+                                    <img src="img/1024px-EA_Sports_monochrome_logo.svg.png" style="width: 50%;"
+                                        alt="EA">
+                                </div>
+                                <div class="card-body p-0">
+                                    <h6 class="card-text mb-1">Principais jogos</h6>
+                                    <ul>
+                                        <li>FIFA</li>
+                                        <li>Battlefield</li>
+                                        <li>Need for Speed</li>
+                                    </ul>
+                                    <p class="card-botton">Mais detalhes...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex float-end my-2">
+                                <button type="button" class="btn btn-secondary btn-sm">+ Carregar mais
+                                    plataformas</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Bootstrap Java -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+            crossorigin="anonymous"></script>
+    </body>
+    <!-- Sobre/Editorial -->
+    <section class="bg-light text-center text-lg-start pb-3">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h3 class="text-uppercase">Sobre</h3>
 
-                <p>
-                    Um site feito por um amante de jogos para outros entusiastas. Com o intuito de mostrar as grandes
-                    novidades do mundo dos games e mais, visamos o melhor desempenho para com você e com a comunidade
-                    gamer em geral. Caso aconteça algum erro, entre em contato conosco atraves de nossas redes sociais.
-                    E bom jogo. :D
-                </p>
+                    <p>
+                        Um site feito por um amante de jogos para outros entusiastas. Com o intuito de mostrar as
+                        grandes
+                        novidades do mundo dos games e mais. Trazendo novidades do Game Awards, embasamento de critícas
+                        em diversos sites e forúns(como o Metacritic Games), além de uma enorme grade de pesquisa para
+                        que de forma alguma entregarmos a você o conteúdo desejado da forma mais confiável
+                        possível.Visamos o melhor desempenho para com você e com a comunidade
+                        gamer em geral. Caso aconteça algum erro, entre em contato conosco atraves de nossas redes
+                        sociais.
+                        E bom jogo. :D
+                    </p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0" id="editor">
+                    <h3 class="text-uppercase">Editorial</h3>
+                    <p>
+                        <i class="bi bi-person-fill"></i><b> Redação:</b> Marcelo Vitor Martins Paiva
+                    </p>
+
+                    <p>
+                        <i class="bi bi-person-fill"></i><b> Pesquisa:</b> Marcelo Vitor Martins Paiva
+                    </p>
+
+                    <p>
+                        <i class="bi bi-person-fill"></i><b> Gerente Geral:</b> Marcelo Vitor Martins Paiva
+                    </p>
+
+                    <h4><b>Redes Sociais</b></h4>
+                    <i class="bi bi-facebook p-2" style="font-size: 35px;"></i>
+                    <i class="bi bi-twitter p-2" style="font-size: 35px;"></i>
+                    <i class="bi bi-instagram p-2" style="font-size: 35px;"></i>
+                    <i class="bi bi-discord p-2" style="font-size: 35px;"></i>
+
+                </div>
+                <!--Grid column-->
             </div>
-            <!--Grid column-->
-
-            <!--Grid column-->
-            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-                <h3 class="text-uppercase">Editorial</h3>
-                <p>
-                    <i class="bi bi-person-fill"></i><b> Redação:</b> Marcelo Vitor Martins Paiva
-                </p>
-
-                <p>
-                    <i class="bi bi-person-fill"></i><b> Pesquisa:</b> Marcelo Vitor Martins Paiva
-                </p>
-
-                <p>
-                    <i class="bi bi-person-fill"></i><b> Gerente Geral:</b> Marcelo Vitor Martins Paiva
-                </p>
-
-                <h4><b>Redes Sociais</b></h4>
-                <i class="bi bi-facebook p-2" style="font-size: 35px;"></i>
-                <i class="bi bi-twitter p-2" style="font-size: 35px;"></i>
-                <i class="bi bi-instagram p-2" style="font-size: 35px;"></i>
-                <i class="bi bi-discord p-2" style="font-size: 35px;"></i>
-
-            </div>
-            <!--Grid column-->
+            <!--Grid row-->
         </div>
-        <!--Grid row-->
+        <!-- Grid container -->
+    </section>
+
+    <!-- Copyright -->
     </div>
-    <!-- Grid container -->
-</section>
+    <div class="bg-black bg-opacity-10">
 
-<!-- Copyright -->
-</div>
-<div class="bg-black bg-opacity-10">
-
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
-            <p class="col-md-8 mb-0">© Copyright 2020 - Disciplina de Desenvolvimentos de Interfaces Web -
-                <b>ICEI PUC MINAS</b>
-            </p>
-            <div class="col-md-4 text-end">
-                <a class="navbar-brand text-end" href="#"><i class="bi bi-controller"></i>Player 2</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </footer>
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+                <p class="col-md-8 mb-0">© Copyright 2020 - Disciplina de Desenvolvimentos de Interfaces Web -
+                    <b>ICEI PUC MINAS</b>
+                </p>
+                <div class="col-md-4 text-end">
+                    <a class="navbar-brand text-end" href="#"><i class="bi bi-controller"></i>Player 2</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </footer>
+        </div>
     </div>
-</div>
-<!-- Copyright -->
+    <!-- Copyright -->
 
-</html>
+    </html>
