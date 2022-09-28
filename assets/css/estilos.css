@@ -1,12 +1,12 @@
 #basic-addon1{
-    background-color: #fff;
+    background-color: white;
 }
 /* Nav Bar */
 
-a[class="navbar-brand"]{
+.navbar-brand{
     border:solid 1px black;
     padding: 2px 10px;
-    background-color: white;
+    background-color: transparent;
 }
 
 i[class="bi bi-controller"]{
@@ -25,19 +25,32 @@ input{
 } 
 
 /* Destaques */
-
+.formatacao{
+    font-size: 0.8rem;
+}
 
 h1[class="justify-content-lg-between"]{
     text-align: center;
     padding: 10px;
 }
 
-inframe{
-    height: 100%;
-    width: 100%;
-    padding: 10px 20px;
+/* Lançamentos */
+#p5{
+    color: red !important;
 }
 
+p[class="card-botton"]{
+    text-align: end !important;
+}
+
+div.lancamentos>div[class="col-3"]{
+    padding: 5px 10px;
+}
+
+/* Cards */
+.card{
+    background-color: transparent;
+}
 
 
 /* X-Small devices (less than 576px) */
@@ -52,7 +65,9 @@ inframe{
 
 /* Medium devices (less than 992px) */
 @media (max-width: 991){
-
+    #nopadding{
+        padding: 10px 0 !important;
+    }
 }
 
 /* Large devices (less than 1200px) */
