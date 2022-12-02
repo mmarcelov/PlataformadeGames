@@ -1,6 +1,6 @@
 const API_BASE_URL = 'https://api.rawg.io/api';
 const CHAVE_API = 'e04d3b0f6ada41e48634b5538430bf33';
-
+alert("A página de pesquisa infelizmente não está operante! Pedimos desculpa pelo incoveniente. Estamos trabalhando...")
 $("#btn-pesquisa").click(() => {
     console.log("clicou")
     const pesquisa = $("#input")[0].value;
